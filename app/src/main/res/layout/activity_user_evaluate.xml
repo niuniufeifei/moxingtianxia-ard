@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserEvaluateActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/home_page_red">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/evaluate"
+            android:textColor="@color/ghost_white"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="17dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/defalut"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="17dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="雷众摩托 定制版哈雷摩托车 美国大狗哈雷太子车883 改装巡洋舰 宗申150-250CC"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新款 亚光黑 250cc油冷"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/purchase_quantity"/>
+
+                <com.dgzd.mxtx.custom.AddAndSubView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="17dp">
+        <RadioButton
+            android:id="@+id/rb_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/praise"
+            android:drawablePadding="6dp"
+            android:drawableLeft="@drawable/lock_icon"/>
+
+        <RadioButton
+            android:id="@+id/rb_assessment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/assessment"
+            android:drawablePadding="6dp"
+            android:drawableLeft="@drawable/lock_icon"/>
+
+        <RadioButton
+            android:id="@+id/rb_bad_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bad_review"
+            android:drawablePadding="6dp"
+            android:drawableLeft="@drawable/lock_icon"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_evaluate"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="17dp"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/rectangle_yellow_shape"
+        android:hint="@string/evaluate_share_tip"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015.12.09"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="17dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fit_description"
+            android:gravity="center"/>
+        <RatingBar
+            android:id="@+id/ratingbar_evaluate1"
+            style="@style/MyRatingbarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:stepSize="1"
+            android:rating="0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="17dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logistics_service"
+            android:gravity="center"/>
+        <RatingBar
+            android:id="@+id/ratingbar_evaluate2"
+            style="@style/MyRatingbarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:stepSize="1"
+            android:rating="0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="17dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/service_attitude"
+            android:gravity="center"/>
+        <RatingBar
+            android:id="@+id/ratingbar_evaluate3"
+            style="@style/MyRatingbarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:stepSize="1"
+            android:rating="0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textSize="15dp"
+            android:textColor="@color/gainsborough"
+            android:background="@drawable/btn_selector"/>
+
+        <Button
+            android:id="@+id/btn_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/publish"
+            android:textSize="15dp"
+            android:textColor="@color/gainsborough"
+            android:background="@drawable/btn_selector"
+            android:layout_marginLeft="27dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

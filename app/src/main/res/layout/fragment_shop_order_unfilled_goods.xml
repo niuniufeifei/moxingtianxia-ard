@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:txttxtBtnView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!-- 待发货-->
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_top1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="17dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_buyer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buyer_name"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <com.dgzd.mxtx.custom.TxtTxtBtn
+            android:id="@+id/txttxtbtn_shop"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            txttxtBtnView:text_title="@string/order_number"
+            txttxtBtnView:text_content="123123"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_order"
+        android:layout_below="@id/layout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:divider="@color/gainsborough"
+        android:dividerHeight="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/lv_order"
+        android:background="@color/gainsborough">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_total_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/my_total_cost"
+                android:textSize="15dp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_freight_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/freight_fee"
+                android:textSize="15dp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_send_out"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@color/home_page_red"
+            android:layout_marginLeft="20dp"
+            android:text="@string/send_out"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_below="@id/layout_middle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_refund"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refunding"
+            android:textSize="15dp"
+            android:layout_marginLeft="17dp"
+            android:textColor="@color/orange"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/tv_agree"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/agree"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginRight="17dp"
+                android:background="@color/home_page_red"/>
+
+            <TextView
+                android:id="@+id/tv_disagree"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/disagree"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginRight="17dp"
+                android:background="@color/home_page_red"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

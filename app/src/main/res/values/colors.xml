@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="ghost_white">#F8F8FF</color>
+    <color name="gainsborough">#DCDCDC</color>
+    <color name="dim_gray">#696969</color>
+    <color name="goldenrod">#DAA520</color>
+    <color name="blue">#4A90E2</color>
+    <color name="gold">#FFD700</color>
+    <color name="red">#FF0000</color>
+    <color name="dark_red">#CC0000</color>
+    <color name="white_smoke">#F5F5F5</color>
+
+    <color name="gray">#828282</color>
+    <color name="light_gray">#c5c5c5</color>
+    <color name="light_black">#414141</color>
+
+
+    <color name="text_color">#ffffff</color>
+
+    <color name="home_page_red">#FF7F50</color>
+    <color name="orange">#FD7821</color>
+    <color name="blue_green">#20C8D3</color>
+
+    <color name="coral">#FF7F50</color>
+    <color name="dark_salmon">#E9967A</color>
+
+    <color name="gray_background">#F1F1F1</color>
+    <color name="transparent">#00000000</color>
+    <color name="background">#F7F4F0</color>
+    <color name="title_color">#333333</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <drawable name="trans_coral">#e0FF7F50</drawable>
+    <drawable name="trans_dark_salmon">#e0E9967A</drawable>
+    <drawable name="trans_skin">#e0E9F0F9</drawable>
+    <drawable name="trans_blue">#e04A90E2</drawable>
+    <drawable name="trans_black">#80040000</drawable>
+    <drawable name="trans">#00000000</drawable>
+
+    <drawable name="normal">#CBFFFFFF</drawable>
+    <drawable name="focused">#CBFFFFFF</drawable>
+    <drawable name="disable">#33FFFFFF</drawable>
+    <color name="de_actionbar_bg">#0195ff</color>
+    <!---->
+    <color name="de_item_select">#f3f3f3</color>
+    <color name="de_action_color">#3498DB</color>
+    <color name="de_action_white">@android:color/white</color>
+    <color name="de_transparent">#00000000</color>
+
+    <color name="de_draft_color">#cb120f</color>
+    <color name="black_textview">#575757</color>
+    <color name="group_list_black_textview">#353535</color>
+    <color name="group_list_gray">#999999</color>
+    <color name="group_list_liner">#e4e4e4</color>
+    <color name="main_title_backgroud">#F2F2F2</color>
+    <color name="main_regist">#ffffff</color>
+    <color name="main_backgroud_search">#f7f7f7</color>
+    <color name="button_backgroud">#0195ff</color>
+    <color name="de_title_bg">#0195ff</color>
+    <color name="ic_yellow">#F5783A</color>
+
+    <color name="rc_text_color_secondary_inverse">@android:color/white</color>
+    <color name="rc_text_color_select_btn_disable">#97d9b3</color>
+</resources>

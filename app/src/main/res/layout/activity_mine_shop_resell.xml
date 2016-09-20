@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_smoke"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="210dp"
+        android:background="@color/red" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/back"/>
+
+        <com.dgzd.mxtx.custom.CircleImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_photo"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_top1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_photo"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp">
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/store_name"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tv_complete_modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_shop_name"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/complete_modify"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/tv_personal_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_shop_name"
+                android:layout_toRightOf="@id/tv_complete_modify"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/shop_info"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:layout_marginLeft="17dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/white"
+        android:divider="@color/red"
+        android:dividerHeight="7dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_post_trad"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="17dp"
+                android:drawableLeft="@drawable/post_trade"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:text="@string/post_trade" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_manage_products"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="17dp"
+                android:drawableLeft="@drawable/manage_products"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:text="@string/manage_products" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_order_management"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="17dp"
+                android:drawableLeft="@drawable/order_management"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:text="@string/order_management" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/next" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

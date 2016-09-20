@@ -1,0 +1,359 @@
+<resources>
+    <string name="app_name">MxTx</string>
+    <!--首页-->
+    <string name="home_page_search">搜索</string>
+    <string name="hot_events">热门活动</string>
+    <string name="hot_commodity">热门商品</string>
+    <string name="hot_video">热门视频</string>
+    <string name="recent_updates">最近更新</string>
+    <string name="more">更多</string>
+    <string name="home_page">首页</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="mine">我的</string>
+
+    <string name="moto_type">车型</string>
+    <string name="moto_accessories">配件</string>
+    <string name="moto_gear">装备</string>
+    <string name="moto_video">视频</string>
+    <string name="moto_trip">摩旅</string>
+
+
+    <!--商品-->
+    <string name="commodity">商品</string>
+    <string name="video">视频</string>
+    <string name="commodity_search">搜索</string>
+    <string name="search_tip">请输入要搜索的内容</string>
+    <string name="entire">全部</string>
+    <string name="classify">分类</string>
+    <string name="hot">热门</string>
+    <string name="time">时间</string>
+    <string name="purchaser_number">已有%d人购买</string>
+
+    <!-- 分类-->
+    <string name="highway">公路</string>
+    <string name="cross_country">越野</string>
+    <string name="pull">拉力</string>
+    <string name="cruise">巡航</string>
+    <string name="streetcar">街车</string>
+    <string name="pedal">踏板</string>
+    <string name="empty"></string>
+
+    <!--商品详情-->
+    <string name="commodity_details">商品详情</string>
+    <string name="cumulative_assessment">累计评价</string>
+    <string name="products_instruction">商品介绍</string>
+    <string name="enter_store">进入店铺</string>
+    <string name="assessment_show">评价晒单</string>
+    <string name="add_shopping_cart">加入购物车</string>
+    <string name="buy_now">立即购买</string>
+
+    <!--加入购物车-->
+    <string name="price">价格</string>
+    <string name="color_specification">颜色规格</string>
+    <string name="inventory">库存</string>
+    <string name="quantity">数量</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+
+    <!--购物车-->
+    <string name="total">合计</string>
+    <string name="to_settlement">去结算</string>
+
+    <!--确认订单-->
+    <string name="confirm_order">确认订单</string>
+    <string name="confirm_shopping_address">确认收货地址(寄送至)</string>
+    <string name="shop">店铺:</string>
+    <string name="delivery">配送方式</string>
+    <string name="ordinary_express">普通快递</string>
+    <string name="express_price">快递%f元</string>
+    <string name="buyers_message">买家留言</string>
+    <string name="commodity_quantity">共计%d件商品</string>
+    <string name="total_cost">店铺合计(含运费)</string>
+    <string name="actual_payment">实付款</string>
+    <string name="submit_order">提交订单</string>
+
+    <!--地址管理-->
+    <string name="address_management">地址管理</string>
+    <string name="add">添加</string>
+    <string name="address_num">地址%d</string>
+    <string name="default_address">默认</string>
+    <string name="modify">修改</string>
+    <string name="consignee">收货人</string>
+    <string name="contact_way">联系方式</string>
+    <string name="post_code">邮编</string>
+    <string name="shopping_address">收货地址</string>
+
+    <!--添加修改地址-->
+    <string name="add_address">添加地址</string>
+    <string name="modify_address">修改地址</string>
+    <string name="save_address">保存</string>
+    <string name="consignee_name">收货人姓名:</string>
+    <string name="consignee_name_tip">请输入收货人姓名</string>
+    <string name="post_code_long">邮政编码:</string>
+    <string name="post_code_long_tip">请输入邮政编码</string>
+    <string name="phone_num">电话号码:</string>
+    <string name="phone_num_tip">请输入电话号码</string>
+    <string name="cell_phone_num">手机号码:</string>
+    <string name="cell_phone_num_tip">请输入手机号码</string>
+    <string name="area">地区:</string>
+    <string name="select_province">请选择省市</string>
+    <string name="select_city">请选择城市</string>
+    <string name="select_area">请选择区域</string>
+
+    <!--支付-->
+    <string name="payment">支付</string>
+    <string name="store">店铺:</string>
+    <string name="alipay_pay">支付宝支付</string>
+    <string name="wechat_pay">微信支付</string>
+    <string name="alipay_payment_code">支付宝支付密码</string>
+    <string name="wechat_payment_code">支付密码</string>
+    <string name="confirm_payment">确认付款</string>
+    <string name="payment_success">付款成功</string>
+    <string name="payment_failed">付款失败</string>
+    <string name="payments_cancelled">取消支付</string>
+
+    <string name="sure">确定</string>
+    <string name="loading">加载中...</string>
+    <string name="app_menu_surelogout">确定退出程序吗？</string>
+    <string name="back_exit_tips">再按一次退出程序</string>
+    <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，应用程序出现错误，即将退出。\n请提交错误报告，我们会尽快修复这个问题！</string>
+    <string name="submit_report">提交报告</string>
+
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="http_status_code_error">网络异常，错误码：%d</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+
+    <!--登录-->
+    <string name="username_tip">请输入用户名</string>
+    <string name="password_tip">请输入密码</string>
+    <string name="qq_login">QQ帐号登录</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="forget_password_title">忘记密码</string>
+    <string name="longin">登录</string>
+    <string name="longin_success">登录成功</string>
+    <string name="longin_failed">登录失败，请检查用户名、密码是否正确</string>
+    <string name="register">注册</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_failed">注册失败</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_tip">确定要退出该帐号？</string>
+    <string name="otherlogin_tip">您的账号在其他设备登陆,请重新登陆！</string>
+
+    <!--忘记密码-->
+    <string name="phone_tip">请输入手机号</string>
+    <string name="verification_code_tip">请输入验证码</string>
+    <string name="get_verification">获取验证码</string>
+    <string name="new_password_tip">请输入新密码</string>
+    <string name="new_password_confirm_tip">请再次确认密码</string>
+    <string name="reset_pwd_success">重置密码成功</string>
+    <string name="reset_pwd_failed">重置密码失败</string>
+
+    <!--注册-->
+    <string name="agree_tip">注册即视为同意摩行天下</string>
+    <string name="service_agreement">服务协议</string>
+    <string name="get_verification_faild">获取验证码失败</string>
+    <string name="input_password_tip">请输入密码</string>
+    <string name="input_confirm_password_tip">请输入确认密码</string>
+
+    <!--我的-->
+    <string name="my_name">姓名</string>
+    <string name="complete_modify">完善/修改</string>
+    <string name="personal_info">个人信息</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_video">我的视频</string>
+    <string name="my_event">我的活动</string>
+    <string name="my_resell">我的二手转卖</string>
+
+    <!--我的修改-->
+    <string name="upload_photo">上传头像</string>
+    <string name="user_nickname">用户昵称:</string>
+    <string name="user_cell_phone_number">手机号码:</string>
+    <string name="user_qq_number">Q Q号码:</string>
+    <string name="user_address">我的地址:</string>
+
+    <!--昵称-->
+    <string name="save">保存</string>
+    <string name="nickname">昵称</string>
+    <string name="nickname_tip">请输入您的昵称</string>
+    <string name="nickname_tip_notice">好名字增添您的个人魅力</string>
+
+    <!--手机号码-->
+    <string name="cell_phone">手机号码</string>
+    <string name="cell_phone_tip">输入手机号码</string>
+    <string name="cell_phone_tip_notice">修改手机号码</string>
+    <string name="cell_phone_notice">我们将往您的%s手机发送验证消息，请点击获取验证码后修改手机号</string>
+
+    <!--QQ号码-->
+    <string name="qq_number">Q Q号码</string>
+    <string name="qq_number_tip">修改QQ号码</string>
+    <string name="qq_number_tip_notice">输入QQ号码</string>
+
+    <!--地址-->
+    <string name="address">地址</string>
+    <string name="select_province_tip">请选择省</string>
+    <string name="select_city_tip">请选择市</string>
+    <string name="select_area_tip">请选择区域</string>
+    <string name="address_tip_notice">选择地址</string>
+    <string name="select_address">选择地址</string>
+
+    <!--我的订单（买家）-->
+    <string name="unpaid">待付款</string>
+    <string name="unfilled_goods">待发货</string>
+    <string name="not_receiving">待收货</string>
+    <string name="to_evaluate">待评价</string>
+    <string name="shop_name">店铺名称</string>
+    <string name="order_number">订单号:</string>
+    <string name="my_total_cost">共计%1$d件商品 合计:%2$d\n(不含运费)</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="refund_tip">取消订单将永久性删除，确定取消订单吗？</string>
+    <string name="immediate_payment">立即付款</string>
+    <string name="refund">退款</string>
+    <string name="refunding">退款中......</string>
+    <string name="refund_application">退款申请</string>
+    <string name="refund_check_pending">已申请退款，待审核......</string>
+    <string name="refund_audit_failed">退款审核未通过</string>
+    <string name="refund_audit_succeed">审核已通过，退款中......</string>
+    <string name="commodity_count">数量* %d</string>
+
+    <string name="check_logistics">查看物流</string>
+    <string name="confirm_receipt">确认收货</string>
+    <string name="evaluate">评价</string>
+
+    <!--评价-->
+    <string name="purchase_quantity">购买数量</string>
+    <string name="praise">好评</string>
+    <string name="assessment">中评</string>
+    <string name="bad_review">差评</string>
+    <string name="evaluate_share_tip">写点评价分享给其他好友吧！</string>
+    <string name="date">日期</string>
+    <string name="fit_description">描述相符:</string>
+    <string name="logistics_service">物流服务:</string>
+    <string name="service_attitude">服务态度:</string>
+    <string name="publish">发表</string>
+
+    <!--我的二手转卖（卖家）-->
+    <string name="store_name">店铺名字</string>
+    <string name="shop_info">店铺信息</string>
+    <string name="post_trade">发布商品</string>
+    <string name="manage_products">管理商品</string>
+    <string name="order_management">订单管理</string>
+    <string name="shop_name2">店铺名字:</string>
+    <string name="upload_store_face">上传店铺头像</string>
+    <string name="click_upload_photo">点击上传头像</string>
+    <string name="shop_name_title">店铺名称</string>
+    <string name="shop_name_title_tip">请输入您的店铺名字</string>
+    <string name="shop_name_title_notice">好名字增添店铺人气</string>
+    <string name="release">发布</string>
+    <string name="click_pic_release">点击图片上传商品照片</string>
+    <string name="title">标题:</string>
+    <string name="title_tip">请给商品一个明亮的标签吧</string>
+    <string name="type">类目:</string>
+    <string name="type_tip">请选择类目</string>
+    <string name="commodity_price">价格:</string>
+    <string name="commodity_price_tip">请输入价格</string>
+    <string name="repertory">库存:</string>
+    <string name="repertory_tip">请输入库存为多少</string>
+    <string name="freight">运费:</string>
+    <string name="freight_tip">请输入运费及运送形式</string>
+    <string name="ship_address">发货地址:</string>
+    <string name="ship_address_tip">请输入详细地址</string>
+    <string name="product_description">商品描述:</string>
+    <string name="product_description_title">商品描述</string>
+    <string name="commodity_list_editor">商品列表编辑</string>
+    <string name="sold">已售</string>
+    <string name="repertory_title">库存</string>
+    <string name="edit">编辑</string>
+
+    <!--我的订单（卖家）-->
+    <string name="buyer_name">买家名字</string>
+    <string name="freight_fee">运费:%d</string>
+    <string name="send_out">发货</string>
+    <string name="agree">同意</string>
+    <string name="disagree">不同意</string>
+    <string name="select_logistics">选择物流</string>
+    <string name="logistics_company">物流公司:</string>
+    <string name="logistics_company_tip">请输入物流</string>
+    <string name="freight_note_number">运单号:</string>
+    <string name="freight_note_number_tip">请输入运单号</string>
+
+    <!--我的视频-->
+    <string name="delete">删除</string>
+    <string name="upload">上传</string>
+    <string name="immediately_pat">马上拍</string>
+    <string name="upload_local_file">本地上传</string>
+    <string name="video_upload_tip">我的视频，说点什么吧！</string>
+
+
+    <!-- 我的活动-->
+    <string name="event_title">我参加的活动</string>
+    <string name="event_registration">活动报名</string>
+    <string name="event_details">活动详情</string>
+    <string name="event_service_protocol">服务协议</string>
+    <string name="event_agree_protocol">我已阅读并同意以上条款</string>
+    <string name="agree_protocol_tip">请先同意协议</string>
+    <string name="next_tip">下一步</string>
+    <string name="contacts">联系人:</string>
+    <string name="entry_fee">报名费:</string>
+    <string name="contact_number">联系电话:</string>
+    <string name="sighed_up">已报名</string>
+    <string name="application_for_drawback">申请退款</string>
+    <string name="wanna_apply">我要报名</string>
+    <string name="event_summary">活动总结</string>
+    <string name="empty_tip">暂无</string>
+    <string name="event_comments">活动评论</string>
+    <string name="official_reply">官方回复</string>
+    <string name="evaluate_tip">请输入评价</string>
+
+
+    <!-- 个人信息-->
+    <string name="your_name">姓 名:</string>
+    <string name="your_name_tip">请输入您的真实姓名</string>
+    <string name="cell_phone_number">手机号:</string>
+    <string name="cell_phone_number_tip">请输入您的手机号</string>
+    <string name="cell_phone_number_correct_tip">请填写正确的手机号</string>
+    <string name="your_address">地 址:</string>
+    <string name="your_address_tip">请输入您的详细地址</string>
+    <string name="identity_card_number">身份证号码:</string>
+    <string name="identity_card_number_tip">请输入您的身份证号码</string>
+    <string name="identity_card_number_correct_tip">请填写正确的身份证号</string>
+    <string name="driving_license">驾驶证照片（正/反）面</string>
+    <string name="driving_license_tip">请上传驾驶证照片</string>
+    <string name="front_side">正面</string>
+    <string name="reverse_side">反面</string>
+
+    <!-- 上拉下拉-->
+    <string name="header_hint_refresh_normal">Pull to refresh</string>
+    <string name="header_hint_refresh_ready">Release to refresh</string>
+    <string name="header_hint_refresh_loading">Refreshing&#8230;</string>
+    <string name="header_hint_refresh_time">Time：</string>
+    <string name="footer_hint_load_normal">Load more</string>
+    <string name="footer_hint_load_ready">Release to load more</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="select_mode">Select Mode</string>
+    <string name="mode_single">Single-Choice</string>
+    <string name="mode_multi">Multi-Choice</string>
+    <string name="max_select_amount">Max Selected Amount</string>
+    <string name="hint_default_amount">default amount is 9</string>
+    <string name="enable_camera">Enable Camera</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="go_select">Select</string>
+    <!--RONG-->
+    <string name="add_contacts">通讯录</string>
+    <string name="de_group_list_default_discussion_name">讨论组</string>
+    <string name="de_message_content_draft">[草稿]</string>
+    <string name="de_message_at_me">[有人@我]</string>
+    <string name="de_dialog_item_message_delete">删除消息</string>
+    <string name="de_actionbar_system">"系统消息"</string>
+    <string name="main_customer">客服</string>
+    <string name="de_actionbar_sub_defult">"聊天"</string>
+    <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+    <item name="tag_third" type="id"></item>
+</resources>

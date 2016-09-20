@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/orange">
+        <TextView
+            android:id="@+id/tv_hot_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="17dp"
+            android:text="@string/more"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/more"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+    <com.dgzd.mxtx.custom.NoScrollGridView
+        android:id="@+id/gv_hot_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:focusable="true"
+        android:horizontalSpacing="6dp"
+        android:verticalSpacing="10dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

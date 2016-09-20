@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:txttxtBtnView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_smoke"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="210dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_title"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/coral">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/personal_info"
+                android:textColor="@color/ghost_white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_title"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <com.dgzd.mxtx.custom.CircleImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:background="@drawable/rectangle_gray_shape"
+                android:text="@string/upload_photo"
+                android:textColor="@color/light_gray"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/white"
+        android:divider="@color/red"
+        android:dividerHeight="7dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_my_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.dgzd.mxtx.custom.TxtTxtBtn
+                android:id="@+id/txttxtbtn_my_nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="17dp"
+                android:gravity="center_vertical"
+                txttxtBtnView:text_content="@string/nickname_tip"
+                txttxtBtnView:text_title="@string/user_nickname" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_cell_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.dgzd.mxtx.custom.TxtTxtBtn
+                android:id="@+id/txttxtbtn_cell_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="17dp"
+                android:gravity="center_vertical"
+                txttxtBtnView:text_content="@string/cell_phone_num_tip"
+                txttxtBtnView:text_title="@string/cell_phone_num" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_my_address"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.dgzd.mxtx.custom.TxtTxtBtn
+                android:id="@+id/txttxtbtn_my_address"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="17dp"
+                android:gravity="center_vertical"
+                txttxtBtnView:text_content="@string/address_tip_notice"
+                txttxtBtnView:text_title="@string/user_address" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/next" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

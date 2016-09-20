@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/home_page_red">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_name_title"
+            android:textColor="@color/ghost_white"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@color/gainsborough">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true" >
+
+            <com.dgzd.mxtx.custom.CircleImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shop_photo_default"/>
+
+            <TextView
+                android:id="@+id/tv_upload_shop_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/upload_store_face"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="305dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:text="@string/title"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/et_title_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_gray_shape"
+                android:hint="@string/title_tip"
+                android:paddingLeft="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/dim_gray"
+                android:textColorHint="@color/gainsborough"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:text="@string/type"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/et_type_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_gray_shape"
+                android:hint="@string/type_tip"
+                android:paddingLeft="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/dim_gray"
+                android:textColorHint="@color/gainsborough"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:text="@string/commodity_price"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/et_price_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_gray_shape"
+                android:hint="@string/commodity_price_tip"
+                android:paddingLeft="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/dim_gray"
+                android:textColorHint="@color/gainsborough"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:text="@string/repertory"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/et_repertory_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_gray_shape"
+                android:hint="@string/repertory_tip"
+                android:paddingLeft="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/dim_gray"
+                android:textColorHint="@color/gainsborough"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:text="@string/freight"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/et_freight_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_gray_shape"
+                android:hint="@string/freight_tip"
+                android:paddingLeft="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/dim_gray"
+                android:textColorHint="@color/gainsborough"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ship_address"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/et_ship_address_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/rectangle_gray_shape"
+                android:hint="@string/click_pic_release"
+                android:gravity="top"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/dim_gray"
+                android:textColorHint="@color/gainsborough"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_product_description"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gainsborough">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="17dp"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/product_description" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/next" />
+    </RelativeLayout>
+</LinearLayout>

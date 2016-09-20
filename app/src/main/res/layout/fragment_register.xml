@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myImageEditView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_black_glass">
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/coral">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/ghost_white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_top1"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_top"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <com.dgzd.mxtx.custom.ImageEditView
+            android:id="@+id/ie_phone"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rectangle_shape"
+            myImageEditView:hint="@string/phone_tip"
+            myImageEditView:src="@drawable/phone_icon"
+            myImageEditView:textColor="@color/ghost_white"
+            myImageEditView:textColorHint="@color/ghost_white" />
+
+        <RelativeLayout
+            android:id="@+id/layout_middle"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/ie_phone"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/et_verification"
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_shape"
+                android:hint="@string/verification_code_tip"
+                android:paddingLeft="5dp"
+                android:textColor="@color/ghost_white"
+                android:textColorHint="@color/ghost_white" />
+
+            <Button
+                android:id="@+id/tv_get_verification"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/et_verification"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:text="@string/get_verification"
+                android:textColor="@color/ghost_white" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/layout_middle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/agree_tip"
+                android:textColor="@color/ghost_white" />
+
+            <TextView
+                android:id="@+id/tv_service_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:gravity="left"
+                android:text="@string/service_agreement"
+                android:textColor="@color/ghost_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_middle3"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_top1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <com.dgzd.mxtx.custom.ImageEditView
+            android:id="@+id/ie_user_name"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            myImageEditView:hint="@string/username_tip"
+            myImageEditView:src="@drawable/user_icon"
+            myImageEditView:textColor="@color/ghost_white"
+            myImageEditView:textColorHint="@color/ghost_white" />
+
+        <com.dgzd.mxtx.custom.ImageEditView
+            android:id="@+id/ie_password"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            myImageEditView:hint="@string/password_tip"
+            myImageEditView:src="@drawable/lock_icon"
+            myImageEditView:textColor="@color/ghost_white"
+            myImageEditView:textColorHint="@color/ghost_white" />
+
+        <com.dgzd.mxtx.custom.ImageEditView
+            android:id="@+id/ie_confirm_password"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            myImageEditView:hint="@string/new_password_confirm_tip"
+            myImageEditView:src="@drawable/lock_icon"
+            myImageEditView:textColor="@color/ghost_white"
+            myImageEditView:textColorHint="@color/ghost_white" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_middle3"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textColor="@color/ghost_white" />
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myhotview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_top"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:padding="2dp"
+            android:background="@color/orange"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_search"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/home_page_search"
+                    android:textSize="14dp"
+                    android:textColor="@color/light_gray"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/gray_search_icon"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="11dp"
+                android:background="@color/gainsborough"/>
+
+            <ImageView
+                android:id="@+id/chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/chat" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="11dp"
+                android:background="@color/gainsborough"/>
+
+            <ImageView
+                android:id="@+id/iv_upload_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/upload" />
+
+        </LinearLayout>
+        <!--轮播 -->
+        <com.dgzd.mxtx.custom.SlideShowView
+        android:id="@+id/slideshowView"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:background="@color/ghost_white" />
+
+        <com.dgzd.mxtx.custom.NoScrollGridView
+            android:id="@+id/gv_show"
+            android:layout_width="fill_parent"
+            android:layout_height="184dp"
+            android:listSelector="@android:color/transparent"
+            android:horizontalSpacing="40dp"
+            android:verticalSpacing="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:numColumns="3" />
+
+        <com.dgzd.mxtx.custom.HotView
+            android:id="@+id/hv_events"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            myhotview:text="@string/hot_events"/>
+
+        <com.dgzd.mxtx.custom.HotView
+            android:id="@+id/hv_commodity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            myhotview:text="@string/hot_commodity"/>
+
+        <com.dgzd.mxtx.custom.HotView
+            android:id="@+id/hv_video"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            myhotview:text="@string/hot_video"/>
+
+        <com.dgzd.mxtx.custom.HotView
+            android:id="@+id/hv_recent_updates"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            myhotview:text="@string/recent_updates"/>
+
+    </LinearLayout>
+</ScrollView>
